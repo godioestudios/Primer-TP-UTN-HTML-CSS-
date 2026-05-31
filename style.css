@@ -1,0 +1,352 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: Inter, Arial, Helvetica, sans-serif;
+    --color1-: #ffffffcc;
+    
+}
+
+body{
+    font-family: var(--font);
+    height: 200vh;
+}
+
+
+.nav-nave{
+    display: flex;
+    align-items: center;
+    background: var(--color1-);
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+    gap: 5px;
+    height: 83px;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    border-bottom: 1px solid #f0f0f0;
+    
+}
+
+.nav-nave-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1022px;
+
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+
+.nav-logo{
+    margin: 0 20px 0 0;
+    max-height: 37px;
+    max-width: 140px;
+}
+
+.nav-logo img{
+    height: 37px;
+    width: 140px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    border-right: 1px solid #cccccc;
+    padding-right: 16px; 
+    margin-right: 16px;
+}
+
+
+.div-cobros{
+    align-items: center;
+    border-radius: 50px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.5rem;
+    margin: 0 4px;
+    min-height: 41px;
+    padding: 6px 15px;
+}
+
+.div-beneficios{
+    align-items: center;
+    border-radius: 50px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.5rem;
+    margin: 0 4px;
+    min-height: 41px;
+    padding: 6px 15px;
+}
+.nav-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: #ffffff; 
+    padding: 10px;
+    justify-content: flex-end;
+
+}
+
+.button-1, .button-2 {
+    font-size: 16px;
+    font-weight: 700; 
+    padding: 10px 28px; 
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.button-1 {
+    background-color: transparent;
+    color: #6a11cb;
+    border: 1px solid #6a11cb;
+}
+
+.button-1:hover {
+    background-color: rgba(107, 17, 203, 0.116); 
+}
+
+
+.button-2 {
+    background-color: #6a11cb;
+    color: #ffffff;
+    border: 1px solid transparent; 
+    
+    
+}
+
+.button-2:hover {
+    background-color: #5900cc;
+    
+}
+
+.title-card-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    margin: 30px 0;
+    
+}
+
+.title-card-welcome h2 { 
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2.625rem;
+    font-weight: 600;
+    letter-spacing: -.045em;
+    margin: 8px 0;
+}
+
+/* Cards */
+.card-container-center-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 auto;
+    max-width: 1022px;
+    padding: 0;
+}
+
+.card-container-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.cards{
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 16px;
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+    justify-content: flex-start;
+    margin-top: 12px;
+    height: 316px;
+    width: 302px;
+    padding: 24px;
+    transition: transform .3s ease-out;
+    
+}
+
+.icon-card{
+    display: flex;
+    align-items: center;
+    background: #f0eafc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    flex-direction: row;
+    height: 62px;
+    justify-content: center;
+    padding: 19px;
+    width: 62px;
+}
+
+.card-title{
+    height: 52px;
+    width: 269px;
+}
+
+.card-title__title-text{
+    color: #2b2b2b;
+    font-size: 24px;
+}
+
+.card-body{
+    height: 81px;
+    width: 269px;
+}
+
+.card-body span{
+    color: #6A6A6A;
+    font-size: 18px;
+}
+
+/* Sección “Encontrá el medio de cobro ideal”: */
+
+
+
+.title-cobro{
+    display: flex;
+    justify-content: center;
+    height: 58px;
+    margin: 20px 0;
+}
+
+.title-cobro h2{
+    color: #2B2B2B;
+    font-size: 40px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.cont-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
+
+.cobro{
+    display: flex;
+    flex-direction: row;
+    height: 367px;
+    width: 1022px;
+}
+
+
+.body{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 22px;
+    width: 100%;
+    gap: 21px;;
+}
+
+.title-cobros {
+    height: 32px;
+    width: 467px;
+
+}
+
+.title-cobros h3{
+    font-size: 24px;
+    color: rgb(43, 43, 43);
+}
+
+.cobros-text {
+    height: 81px;
+    width: 467px;
+}
+
+.cobros-text  span{
+    font-size: 18px;
+    color:#2B2B2B;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.cobros-img{
+    width: 511px;
+    height: 367px;
+    padding: 21px 18px;
+}
+
+.cobros-img img{
+    height: 325px;
+    width: 475px;
+    object-fit: contain;
+}
+
+
+
+
+.button-cobro {
+    display: inline-flex;    
+    align-items: center;     
+    gap: 4px;                
+    cursor: pointer;         
+    margin-top: 15px;
+}
+
+
+.button-cobro button {
+    background: none;        
+    border: none;            
+    padding: 0;              
+    font-family: inherit;    
+    font-size: 16px;         
+    font-weight: 700;        
+    color: #360C72;          
+    cursor: pointer;
+    letter-spacing: .02857em;
+    transition: all .4s ease-in-out 0s;
+}
+
+
+.button-cobro:hover{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button-cobro .arrow-icon {
+    width: 18px;             
+    height: 18px;
+    color: #360C72;          
+    display: flex;
+    align-items: center;
+}
+
+
+
+

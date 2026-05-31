@@ -3,88 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practico-1</title>
+    <title>Nave-Practico-1</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-left">
-                <div   div class="nav-logo">
-                    <img src="./img/Logo Nave.jpg" alt="logo-nav">
+        <nav class="nav-nave">
+            <div class="nav-nave-content">
+                <div class="nav-left">
+                    <div   div class="nav-logo">
+                        <img src="./img/Logo Nave.jpg" alt="logo-nav">
+                    </div>
+                    <ul class="nav-list">
+                        <li class="div-cobros">Cobros</li>
+                        <li class="div-beneficios">Beneficios</li>
+                    </ul>
                 </div>
-                <div class="nav-cobros">
-                    <span>Cobros</span>
+                <div class="nav-right">
+                    <button class="button-1">Espacio Nave</button>
+                    <button class="button-2">Entrar a Nave</button>
                 </div>
-                <div class="nav-beneficios">
-                    <span>Beneficios</span>
-                </div>
-            </div>
-            <div class="nav-right">
-                <button class="button-1">Espacio Nave</button>
-                <button class="button-2">Entrar a Nave</button>
             </div>
         </nav>
     </header>
     <main>
-        <div class="title-2">
-            <h1>Te damos la bienvenida al vuelo de tu negocio</h1>
+        <!-- Cards: Sección: "Vuelo de tu negocio": -->
+        <div class="title-card-welcome">
+            <h2>Te damos la bienvenida al vuelo de tu negocio</h2>
         </div>
-        <div class="card-conteiner">
-            <div class="card-1">
-                <div class="icon-card__card-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C10.5 2 9.5 3.5 8 3.5C6.5 3.5 5 2.5 4 4C3 5.5 4 7 3.5 8.5C3 10 1.5 10.5 2 12C1.5 13.5 3 14 3.5 15.5C4 17 3 18.5 4 20C5 21.5 6.5 20.5 8 20.5C9.5 20.5 10.5 22 12 22C13.5 22 14.5 20.5 16 20.5C17.5 20.5 19 21.5 20 20C21 18.5 20 17 20.5 15.5C21 14 22.5 13.5 22 12C22.5 10.5 21 10 20.5 8.5C20 7 21 5.5 20 4C19 2.5 17.5 3.5 16 3.5C14.5 3.5 13.5 2 12 2Z" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        <line x1="15" y1="9" x2="9" y2="15" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round"/>
-                        <circle cx="9.5" cy="9.5" r="1.25" fill="#6a11cb"/>
-                        <circle cx="14.5" cy="14.5" r="1.25" fill="#6a11cb"/>
-                    </svg>
+
+        <div class="card-container-center-box">
+            <div class="card-container-box">
+                <!-- Card 1 -->
+                <div class="cards card-1">
+                    <div class="icon-card icon-card__card-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C10.5 2 9.5 3.5 8 3.5C6.5 3.5 5 2.5 4 4C3 5.5 4 7 3.5 8.5C3 10 1.5 10.5 2 12C1.5 13.5 3 14 3.5 15.5C4 17 3 18.5 4 20C5 21.5 6.5 20.5 8 20.5C9.5 20.5 10.5 22 12 22C13.5 22 14.5 20.5 16 20.5C17.5 20.5 19 21.5 20 20C21 18.5 20 17 20.5 15.5C21 14 22.5 13.5 22 12C22.5 10.5 21 10 20.5 8.5C20 7 21 5.5 20 4C19 2.5 17.5 3.5 16 3.5C14.5 3.5 13.5 2 12 2Z" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="15" y1="9" x2="9" y2="15" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round"/>
+                            <circle cx="9.5" cy="9.5" r="1.25" fill="#6a11cb"/>
+                            <circle cx="14.5" cy="14.5" r="1.25" fill="#6a11cb"/>
+                        </svg>
+                    </div>
+                    <div class="card-title">
+                        <h3 class="card-title__title-text">Viajá liviano de comisiones</h3>
+                    </div>
+                    <div class="card-body card-body-1">
+                        <span>Vos elegís cuando acreditar la plata de tus ventas, siempre con comisiones bajas.</span>
+                    </div>
                 </div>
-                <div class="card-title__title-1">
-                    <h3>Viajá liviano de comisiones</h3>
+                <!-- Card 2 -->
+                <div class="cards card-2">
+                    <div class="icon-card icon-card__card-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="10" width="16" height="11" rx="1.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
+                            <rect x="3" y="7" width="18" height="3" rx="1" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
+                            <line x1="12" y1="7" x2="12" y2="21" stroke="#6a11cb" stroke-width="1.8"/>
+                            <path d="M12 7C9.5 4 7 4.5 8.5 3C10 1.5 12 4.5 12 7Z" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 7C14.5 4 17 4.5 15.5 3C14 1.5 12 4.5 12 7Z" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-title">
+                        <h3 class="card-title__title-text">Promociones que se adaptan a vos</h3>
+                    </div>
+                    <div class="card-body card-body-2">
+                        <span>Activá combos, cuotas o beneficios cuándo y cómo quieras, según lo que tu negocio necesite.</span>
+                    </div>
                 </div>
-                <div class="card-body__body-1">
-                    <span>Vos elegís cuando acreditar la plata de tus ventas, siempre con comisiones bajas.</span>
+                <!-- Card 3 -->
+                <div class="cards card-3">
+                    <div class="icon-card icon-card__card-3">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="3" y1="20" x2="21" y2="20" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round"/>
+                            <rect x="5" y="13" width="2.5" height="7" rx="0.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
+                            <rect x="10.75" y="6" width="2.5" height="14" rx="0.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
+                            <rect x="16.5" y="10" width="2.5" height="10" rx="0.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-title">
+                        <h3 class="card-title__title-text">Todo el control desde la cabina</h3>
+                    </div>
+                    <div class="card-body card-body-3">
+                        <span>Centralizás la información clave en un solo lugar, con acceso en tiempo real para vos y tu equipo.</span>
+                    </div>
                 </div>
             </div>
-            <div class="card-2">
-                <div class="icon-card__card-2">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="10" width="16" height="11" rx="1.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
-                        <rect x="3" y="7" width="18" height="3" rx="1" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
-                        <line x1="12" y1="7" x2="12" y2="21" stroke="#6a11cb" stroke-width="1.8"/>
-                        <path d="M12 7C9.5 4 7 4.5 8.5 3C10 1.5 12 4.5 12 7Z" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 7C14.5 4 17 4.5 15.5 3C14 1.5 12 4.5 12 7Z" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+        </div>
+        <!-- Sección “Encontrá el medio de cobro ideal”:  -->
+        <div class="title-cobro">
+            <h2>Cobrá como querés, donde querés.</h2>
+        </div>
+        <div class="cont-center"> <!-- contenedor -->
+
+            <div class="cobro qr-contain">       
+                <div class="body qr-body">
+                    <div class="title-cobros  qr-title">
+                        <h3>QR</h3>
+                    </div>
+
+                    <div class="cobros-text qr-text">
+                        <span>
+                            Simple e interoperable, cobrás con dinero en cuenta o tarjeta,
+                            desde cualquier billetera desde tu mostrador, web, factura o punto de venta.
+                        </span>
+                    </div>
+
+                    <div class="button-cobro">
+                        <button>Conocer más</button>
+
+                        <div class="qr-svg-icon">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="#2B2B2B">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-title__title-2">
-                    <h3>Promociones que se adaptan a vos</h3>
-                </div>
-                <div class="card-body__body-2">
-                    <span>Activá combos, cuotas o beneficios cuándo y cómo quieras, según lo que tu negocio necesite.</span>
+
+                <div class=" cobros-img qr-img">
+                    <img src="./img/qr.png" alt="qr-image">
                 </div>
             </div>
-            <div class="card-3">
-                <div class="icon-card__card-3">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="3" y1="20" x2="21" y2="20" stroke="#6a11cb" stroke-width="1.8" stroke-linecap="round"/>
-                        <rect x="5" y="13" width="2.5" height="7" rx="0.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
-                        <rect x="10.75" y="6" width="2.5" height="14" rx="0.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
-                        <rect x="16.5" y="10" width="2.5" height="10" rx="0.5" stroke="#6a11cb" stroke-width="1.8" stroke-linejoin="round"/>
-                    </svg>
+
+            <div class="cobro terminal-nave-contain"> 
+                <div class="cobros-img terminal-nave-img">
+                    <img src="./img/terminal-nave-imgen.png" alt="terminal-img">
                 </div>
-                <div class="card-title__title-3">
-                    <h3>Todo el control desde la cabina</h3>
+                <div class="body terminal-nave-body">
+                    <div class="title-cobros   terminal-nave-title">
+                        <h3>Terminal Nave Point</h3>
+                    </div>
+
+                    <div class="cobros-text  terminal-nave-text">
+                        <span>
+                            Aceptá pagos con tarjetas (contactless, con tecnología NFC) o QR y resolvé cada venta con autonomía, estés donde estés.
+                        </span>
+                    </div>
+
+                    <div class="button-cobro">
+                        <button>Conocer más</button>
+                        <div class="svg-icon">
+                            <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body__body-3">
-                    <span>Centralizás la información clave en un solo lugar, con acceso en tiempo real para vos y tu equipo.</span>
-                </div>
-            </div>
             </div>
         </div>
     </main>
-
-
-
+    <footer>
+        
+    </footer>
 </body>
 </html>
