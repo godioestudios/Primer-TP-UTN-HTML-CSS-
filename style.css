@@ -303,6 +303,12 @@ header {
     width: 511px;
     height: 367px;
     padding: 21px 18px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.cobros-img:hover{
+    transform: scale(1.06);
+    
 }
 
 .cobros-img img{
@@ -431,26 +437,26 @@ footer {
 /*  ADAPTACIÓN PARA 2K  */
 @media screen and (min-width: 1280px) {
     .nav-nave-content {
-        width: 100%;
+        width: 50%;
         max-width: 1400px;       
         margin: 0 auto;
     }
     
     .card-container-box {
-        width: 100%;
+        width: 50%;
         max-width: 1400px;      
         margin: 0 auto;
         gap: 24px;               
     }
 
     .cards {
-        width: 100%;
+        width: 50%;
         max-width: 440px;        
         height: 340px;           
     }
 
     .cobro {
-        width: 100%;
+        width: 50%;
         max-width: 1400px;       
         margin: 0 auto;
         justify-content: space-between;
@@ -462,13 +468,13 @@ footer {
     }
 
     .cobros-img img {
-        width: 100%;
+        width: 50%;
         max-width: 600px;        
         height: auto;
     }
     
     .center-cont-footer {
-        width: 100%;
+        width: 50%;
         max-width: 1400px;       
         margin: 0 auto;
     }
