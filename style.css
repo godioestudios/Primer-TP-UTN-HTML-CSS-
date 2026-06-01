@@ -10,7 +10,6 @@
 :root{
     --font: Inter, Arial, Helvetica, sans-serif;
     --color1-: #ffffffcc;
-    
 }
 
 body{
@@ -18,6 +17,24 @@ body{
     height: 200vh;
 }
 
+/* NAV */
+
+header {
+    position: fixed;
+    top: 0;         
+    left: 0;        
+    width: 100%;    
+    z-index: 1000;  
+    background-color: #ffffff; 
+}
+
+/* nav para celulares*/
+.menu-hamburguesa {
+    display: none;
+}
+.logo-mobile {
+    display: none;
+}
 
 .nav-nave{
     display: flex;
@@ -28,19 +45,14 @@ body{
     width: 100%;
     gap: 5px;
     height: 83px;
-    position: sticky;
-    top: 0;
-    z-index: 1001;
     border-bottom: 1px solid #f0f0f0;
-    
 }
 
 .nav-nave-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1022px;
-
+    width: 1022px; 
 }
 
 .nav-left{
@@ -49,7 +61,6 @@ body{
     justify-content: flex-start;
     margin-right: 20px;
 }
-
 
 .nav-logo{
     margin: 0 20px 0 0;
@@ -61,6 +72,7 @@ body{
     height: 37px;
     width: 140px;
 }
+
 .nav-list{
     display: flex;
     flex-direction: row;
@@ -71,8 +83,7 @@ body{
     margin-right: 16px;
 }
 
-
-.div-cobros{
+.bot-nav-list{
     align-items: center;
     border-radius: 50px;
     display: inline-flex;
@@ -83,20 +94,17 @@ body{
     margin: 0 4px;
     min-height: 41px;
     padding: 6px 15px;
+    cursor: pointer;
 }
 
-.div-beneficios{
-    align-items: center;
-    border-radius: 50px;
-    display: inline-flex;
-    font-size: 14px;
-    font-weight: 700;
-    justify-content: center;
-    line-height: 1.5rem;
-    margin: 0 4px;
-    min-height: 41px;
-    padding: 6px 15px;
+.bot-nav-list:hover {
+    color: #360C72;               
+    background-color: #E2DBF0;    
+    box-shadow: inset 0 0 0 1px rgba(54, 12, 114, 0.08);
 }
+
+/* Derecha del nav */
+
 .nav-right {
     display: flex;
     gap: 16px;
@@ -104,8 +112,9 @@ body{
     background-color: #ffffff; 
     padding: 10px;
     justify-content: flex-end;
-
 }
+
+/* Botones de la derecha del nav */
 
 .button-1, .button-2 {
     font-size: 16px;
@@ -127,18 +136,16 @@ body{
     background-color: rgba(107, 17, 203, 0.116); 
 }
 
-
 .button-2 {
     background-color: #6a11cb;
     color: #ffffff;
     border: 1px solid transparent; 
-    
-    
 }
 
 .button-2:hover {
-    background-color: #5900cc;
-    
+    color: #360C72;               
+    background-color: #E2DBF0;    
+    box-shadow: inset 0 0 0 1px rgba(54, 12, 114, 0.08);
 }
 
 .title-card-welcome{
@@ -147,7 +154,6 @@ body{
     align-items: center;
     height: 58px;
     margin: 30px 0;
-    
 }
 
 .title-card-welcome h2 { 
@@ -161,28 +167,26 @@ body{
 }
 
 /* Cards */
+
 .card-container-center-box{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 6px;
-    margin: 0 auto;
-    max-width: 1022px;
-    padding: 0;
+    width: 100%; 
 }
 
 .card-container-box{
     display: flex;
     justify-content: space-between;
     gap: 16px;
+    width: 1022px; 
 }
 
 .cards{
     align-items: flex-start;
     background: #fff;
     border-radius: 16px;
-    
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -194,7 +198,11 @@ body{
     width: 302px;
     padding: 24px;
     transition: transform .3s ease-out;
-    
+}
+
+.cards:hover{
+    transform: translateY(-6px); 
+    cursor:default;
 }
 
 .icon-card{
@@ -230,9 +238,6 @@ body{
     font-size: 18px;
 }
 
-/* Sección “Encontrá el medio de cobro ideal”: */
-
-
 
 .title-cobro{
     display: flex;
@@ -254,29 +259,27 @@ body{
     flex-direction: column;
     align-items: center;
     gap:15px;
+    width: 100%; 
 }
-
 
 .cobro{
     display: flex;
     flex-direction: row;
     height: 367px;
-    width: 1022px;
+    width: 1022px; 
 }
-
 
 .body{
     display: flex;
     flex-direction: column;
     padding: 50px 22px;
     width: 100%;
-    gap: 21px;;
+    gap: 21px;
 }
 
 .title-cobros {
     height: 32px;
     width: 467px;
-
 }
 
 .title-cobros h3{
@@ -295,6 +298,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
 }
+
 .cobros-img{
     width: 511px;
     height: 367px;
@@ -307,9 +311,6 @@ body{
     object-fit: contain;
 }
 
-
-
-
 .button-cobro {
     display: inline-flex;    
     align-items: center;     
@@ -317,7 +318,6 @@ body{
     cursor: pointer;         
     margin-top: 15px;
 }
-
 
 .button-cobro button {
     background: none;        
@@ -331,7 +331,6 @@ body{
     letter-spacing: .02857em;
     transition: all .4s ease-in-out 0s;
 }
-
 
 .button-cobro:hover{
     color: -webkit-link;
@@ -347,6 +346,344 @@ body{
     align-items: center;
 }
 
+/* Footer */
+footer {    
+    padding: 60px 0;               
+    width: 100%;
+    font-family: inherit;
+}
+
+.center-cont-footer {
+    display: flex;
+    flex-direction: column;
+    width: 1022px;                 
+    margin: 0 auto;                
+    padding: 0 20px;
+}
 
 
+.elements-footer {
+    display: flex;
+    flex-direction: column;        
+    align-items: flex-start;       
+    gap: 40px;
+}
+
+/* Logo */
+.footer-img {
+    width: 100%;                   
+}
+
+.footer-img img {
+    height: 46px;                  
+    width: 44px;
+}
+
+/* Listas */
+.cont-list-footer {
+    display: flex;
+    gap: 60px;                     
+    flex-wrap: wrap;               
+    width: 100%;                   
+    justify-content: flex-start;   
+}
+
+.list-footer {
+    flex: 1;
+    min-width: 140px;              
+}
+
+
+.list-footer span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;              
+    color: #1A1A1A;                
+    text-transform: uppercase;     
+    letter-spacing: 0.5px;         
+    margin-bottom: 20px;           
+}
+
+
+.list-footer ul {
+    list-style: none;              
+    margin: 0;
+    padding: 0;
+}
+
+
+.list-footer ul li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6C757D;                
+    margin-bottom: 12px;           
+    cursor: pointer;
+    transition: color 0.2s ease;   
+}
+
+
+.list-footer ul li:hover {
+    color: #360C72;                
+}
+
+/*  ADAPTACIONES  */
+
+/*  ADAPTACIÓN PARA 2K  */
+@media screen and (min-width: 1280px) {
+    .nav-nave-content {
+        width: 100%;
+        max-width: 1400px;       
+        margin: 0 auto;
+    }
+    
+    .card-container-box {
+        width: 100%;
+        max-width: 1400px;      
+        margin: 0 auto;
+        gap: 24px;               
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 440px;        
+        height: 340px;           
+    }
+
+    .cobro {
+        width: 100%;
+        max-width: 1400px;       
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    .cobros-img {
+        width: 50%;
+        height: auto;
+    }
+
+    .cobros-img img {
+        width: 100%;
+        max-width: 600px;        
+        height: auto;
+    }
+    
+    .center-cont-footer {
+        width: 100%;
+        max-width: 1400px;       
+        margin: 0 auto;
+    }
+}
+
+/*  ADAPTACIÓN PARA 1K */
+@media screen and (max-width: 1279px) {
+    .nav-nave {
+        padding: 16px 24px;      
+    }
+
+    .nav-nave-content {
+        width: 100%;             
+    }
+
+    /* Sección de Cards */
+    .card-container-center-box {
+        padding: 0 24px;        
+    }
+
+    .card-container-box {
+        width: 100%;             
+    }
+
+    .cards {
+        width: 100%;             
+        flex-grow: 1;            
+    }
+
+    .cont-center {
+        padding: 0 24px;         
+    }
+
+    .cobro {
+        width: 100%;             
+        height: auto;            
+    }
+
+    /* Footer */
+    .center-cont-footer {
+        width: 100%;             
+        padding: 0 24px;         
+    }
+}
+
+/* Celulares */
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .nav-nave {
+        height: 64px;           
+        padding: 0 16px;
+    }
+
+    .nav-nave-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo-desktop,
+    .nav-list,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        margin-right: 0;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22px;
+        height: 16px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1010;
+    }
+
+    .menu-hamburguesa span {
+        width: 100%;
+        height: 2px;
+        background-color: #2B2B2B; 
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .logo-mobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .logo-mobile img {
+        height: 32px; 
+        width: 32px;
+        object-fit: cover;
+        object-position: left center; 
+    }
+    
+    .title-card-welcome {
+        height: auto;
+        margin: 100px 0 20px 0; 
+        padding: 0 16px;
+    }
+
+    .title-card-welcome h2 {
+        font-size: 28px;
+        line-height: 2rem;
+    }
+
+    .title-cobro {
+        height: auto;
+        margin: 40px 0 10px 0;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .title-cobro h2 {
+        font-size: 28px;
+    }
+
+    /* Cards */
+    .card-container-center-box {
+        padding: 0 16px;
+    }
+
+    .card-container-box {
+        flex-direction: column; 
+        width: 100%;
+        gap: 12px;
+    }
+
+    .cards {
+        width: 100%; 
+        height: auto; 
+        min-height: 220px;
+    }
+
+    /* Cobro */
+    .cont-center {
+        padding: 0 16px;
+    }
+
+    .cobro {
+        flex-direction: column; 
+        width: 100%;
+        height: auto; 
+        border-bottom: 1px solid #f0f0f0; 
+        padding-bottom: 30px;
+    }
+
+    .body {
+        padding: 20px 0;
+        gap: 12px;
+    }
+
+    .title-cobros, 
+    .cobros-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-cobros h3 {
+        font-size: 22px;
+    }
+
+    .cobros-text span {
+        font-size: 16px;
+    }
+
+    .cobros-img {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cobros-img img {
+        width: 100%;
+        max-width: 340px; 
+        height: auto;
+    }
+
+    /* Footer */
+    .center-cont-footer {
+        width: 100%; 
+        padding: 0 24px;
+    }
+
+    .elements-footer {
+        gap: 32px;
+    }
+
+    .cont-list-footer {
+        gap: 32px;
+    }
+
+    .list-footer {
+        min-width: 40%; 
+    }
+    
+    .list-footer span {
+        margin-bottom: 12px;
+    }
+}
 
