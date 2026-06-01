@@ -435,68 +435,72 @@ footer {
 /*  ADAPTACIONES  */
 
 /*  ADAPTACIÓN PARA 2K  */
-@media screen and (min-width: 1280px) {
-    .nav-nave-content {
-        width: 50%;
-        max-width: 1400px;       
-        margin: 0 auto;
-    }
-    
-    .card-container-box {
-        width: 50%;
-        max-width: 1400px;      
-        margin: 0 auto;
-        gap: 24px;               
-    }
+@media screen and (min-width: 2000px) {
+        .nav-nave-content {
+            width: 50%;
+            max-width: 1400px;       
+            margin: 0 auto;
+        }
+        
+        .card-container-box {
+            width: 50%;
+            max-width: 1400px;      
+            margin: 0 auto;
+            gap: 24px;               
+        }
 
-    .cards {
-        width: 50%;
-        max-width: 440px;        
-        height: 340px;           
-    }
+        .cards {
+            width: 50%;
+            max-width: 440px;        
+            height: 340px;      
+        }
 
-    .cobro {
-        width: 50%;
-        max-width: 1400px;       
-        margin: 0 auto;
-        justify-content: space-between;
-    }
-    
-    .cobros-img {
-        width: 50%;
-        height: auto;
-    }
+        .cobro {
+            width: 50%;
+            max-width: 1400px;       
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        
+        .cobros-img {
+            width: 50%;
+            height: auto;
+        }
 
-    .cobros-img img {
-        width: 50%;
-        max-width: 600px;        
-        height: auto;
+        .cobros-img img {
+            width: 50%;
+            max-width: 600px;        
+            height: auto;
+        }
+        
+        .center-cont-footer {
+            width: 50%;
+            max-width: 1400px;       
+            margin: 0 auto;
+        }
     }
-    
-    .center-cont-footer {
-        width: 50%;
-        max-width: 1400px;       
-        margin: 0 auto;
-    }
-}
 
 /*  ADAPTACIÓN PARA 1K */
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1200px) {
     .nav-nave {
-        padding: 16px 24px;      
+        padding: 16px 24px; 
+        justify-content: center;     
     }
 
     .nav-nave-content {
-        width: 100%;             
+        width: 100%;    
+        justify-content: space-evenly;         
     }
 
     /* Sección de Cards */
     .card-container-center-box {
         padding: 0 24px;        
+        margin: 0 auto;
     }
 
     .card-container-box {
-        width: 100%;             
+        width: 100%;      
+        justify-content: flex-start;       
     }
 
     .cards {
@@ -521,7 +525,7 @@ footer {
 }
 
 /* Celulares */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 985px) {
     body {
         height: auto;
     }
